@@ -1,0 +1,14 @@
+-#%p#notice= notice
+-#%p= link_to 'add part', new_part_path
+-#%p= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' }
+
+.post
+
+  = image_tag(@post.photo, :class => 'image')
+  .title= @post.title
+  %br
+
+  .body= @post.body
+
+  %br
+= will_paginate( @parts )

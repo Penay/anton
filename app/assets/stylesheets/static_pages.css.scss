@@ -1,0 +1,168 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+.navbar-inner {
+  background-color: #000; /* background color will be black for all browsers */
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+
+.container{
+  margin-left:250px;
+}
+
+
+/*	universal	*/
+
+*{
+  font-family:helvetica;
+}
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* header */
+
+#logo {
+
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+footer a {
+  color: #555;
+}  
+
+footer a:hover { 
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+.post img{
+  float: left;
+  width:320px;
+  height:160px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.post .title{
+  font-weight:bold;
+  font-size: 18px; 
+}
+
+.post .body{
+  text-align:justify;
+}
+
+/* sidebar */
+sidebar{
+  display-inline:block; 
+  float: left;
+  border:1px solid #f2f2f2;
+  border-radius:0 5px 5px 0;
+  padding-right:30px;
+  margin-right:50px;
+}
+
+sidebar ul li{
+  list-style:none;
+}
+
+sidebar a{
+  color:black !important;
+}
+
+.team{
+  width:32px !important;
+  height:32px !important;
+}
+
+sidebar p{
+  padding:10px;
+  border-bottom: 1px solid #333333;
+}

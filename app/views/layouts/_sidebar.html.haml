@@ -1,0 +1,10 @@
+%sidebar.sidebar
+  %ul
+    - @posts.each do |post|
+      %p
+        = image_tag(post.logo.url, :class => 'team')
+        = link_to post.title, post
+      
+
+
+

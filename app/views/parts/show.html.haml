@@ -1,0 +1,9 @@
+#notice= notice
+
+%p
+  %b Body:
+  = @part.body
+
+
+#previous= link_to 'Previous', part_path(@part.id - 1)
+#next= link_to 'Next', part_path(@part.id + 1)

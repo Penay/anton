@@ -1,0 +1,43 @@
+<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+<script>
+/* ****************************************************************
+ * @skypeId  :  skype id of the user you want to show status.
+ *
+ * @iconType : which type of skype status icon you want to show.
+ *      balloon   - Balloon style
+ *      bigclassic  - Big Classic Style
+ *      smallclassic - Small Classic Style
+ *      smallicon  - Small Icon (transparent background)
+ *      mediumicon  - Medium Icon
+ *      dropdown-white - Dropdown White Background
+ *      dropdown-trans - Dropdown Transparent Background
+ *
+ * @skypeEvent : which event you want to call on onclick event of skype status icon
+ *     caht   - Opne chat window
+ *     call   - Call that user
+ *     add    - Added that user to contact list
+ *     userinfo  - Show user info of that user
+ *     sendfile  - Send selected file to that user
+ *
+ * @statusShowId : id of the HTML element where you want to show the status icon
+ * **********************************************************/
+ 
+function getSkypeStatus(skypeId,iconType,skypeEvent,statusShowId){
+ var image = new Image()
+ $(image).attr('src','http://mystatus.skype.com/'+iconType+'/'+skypeId);
+ var src = $(image).attr('src');
+ var html = skypeId +  '<a href="skype:'+skypeId+'?'+skypeEvent+'" onclick="return skypeCheck();"><img src="'+src+'" border="0"></a>';
+ $('#show_status_1').append(html);
+}
+ 
+$(function() { getSkypeStatus
+('penay3','smallicon','chat','show_status_1');
+});
+</script>
+<div id='show_status_1'></div>
+<!--
+Skype 'My status' button
+http://www.skype.com/go/skypebuttons
+-->
+<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+<a href="skype:penay3?call"><img src="http://mystatus.skype.com/bigclassic/penay3" style="border: none;" width="182" height="44" alt="My status" /></a>
